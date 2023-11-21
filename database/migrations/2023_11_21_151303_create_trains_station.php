@@ -17,9 +17,14 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('agency');
-            $table->string('departures');
-            $table->string('arrivals');
-
+            $table->string('departure_station');
+            $table->string('arrival_station');
+            $table->time('departure_time', $precision = 0);
+            $table->time('arrival_time', $precision = 0);
+            $table->char('code_train');
+            $table->tinyInteger('carriage_number');
+            $table->boolean('train_on_schedule');
+            $table->boolean('train_cancelled');
         });
     }
 
