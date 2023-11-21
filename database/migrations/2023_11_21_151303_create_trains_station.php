@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('agency');
             $table->string('departure_station');
             $table->string('arrival_station');
-            $table->time('departure_time', $precision = 0);
-            $table->time('arrival_time', $precision = 0);
+            $table->dateTime('departure_date', $precision = 0);
+            $table->dateTime('arrival_date', $precision = 0);
             $table->char('code_train');
             $table->tinyInteger('carriage_number');
             $table->boolean('train_on_schedule');
