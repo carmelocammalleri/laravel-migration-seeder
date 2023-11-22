@@ -16,10 +16,11 @@
         <table class="table">
             <thead>
               <tr>
-                <th scope="col">agenzia</th>
-                <th scope="col">codice treno</th>
-                <th scope="col">partenza</th>
-                <th scope="col">arrivo</th>
+                <th scope="col">Agenzia</th>
+                <th scope="col">Codice treno</th>
+                <th scope="col">Stazione partenza</th>
+                <th scope="col">Stazione arrivo</th>
+                <th scope="col">Giorno e ora partenza</th>
               </tr>
             </thead>
 
