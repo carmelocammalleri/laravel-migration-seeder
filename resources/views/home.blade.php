@@ -21,6 +21,8 @@
                 <th scope="col">Stazione partenza</th>
                 <th scope="col">Stazione arrivo</th>
                 <th scope="col">Giorno e ora partenza</th>
+                <th scope="col">Carrozze</th>
+                <th scope="col">Cancellato</th>
               </tr>
             </thead>
 
@@ -33,6 +35,17 @@
                         <td>{{ $train->departure_station }}</td>
                         <td>{{ $train->arrival_station }}</td>
                         <td>{{ $train->departure_date }}</td>
+                        <td>{{ $train->carriage_number }}</td>
+                        @if (!$train->train_cancelled)
+                            <td></td>
+
+
+                        @else
+                            <td>CANCELLATO</td>
+
+
+                        @endif
+
                     </tr>
                 @endforeach
 
