@@ -22,7 +22,7 @@
                 <th scope="col">Stazione arrivo</th>
                 <th scope="col">Giorno e ora partenza</th>
                 <th scope="col">Carrozze</th>
-                <th scope="col">Cancellato</th>
+                <th scope="col">Stato</th>
               </tr>
             </thead>
 
